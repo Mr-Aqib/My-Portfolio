@@ -3,17 +3,27 @@
     padding: 0;
     margin: 0;
 }
+
+
+
   .buttons-holder
   {
     transition: all 0.5s;
   }
   .navbar-holder
   {
-    background-color: rgba(0, 73, 144);
+    /* background-color: rgba(0, 73, 144); */
+    background-color: black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
       rgba(0, 73, 144, 0.5) 5px 10px 15px;
 
   }
+ 
+  .row
+  {
+    border: 2px white solid;
+  }
+  
   .button {
     
     outline: 0 !important;
