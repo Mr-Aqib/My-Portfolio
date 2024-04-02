@@ -18,7 +18,7 @@
 
   }
   
-  .button {
+  .nav-btns {
     
     outline: 0 !important;
     border: 0 !important;
@@ -31,7 +31,7 @@
     cursor: pointer;
   }
   
-  .button:hover {
+  .nav-btns:hover {
     transform: translateY(-6px);
    color: rgb(27, 133, 219);
   }
@@ -104,4 +104,4 @@
     100% {
       transform: scale(1);
     }
-  }.itsme  
+  }
