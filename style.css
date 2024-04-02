@@ -41,67 +41,81 @@
    
   }
   /* Nav Button */
- .itsme {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    background-color: rgba(0, 73, 144);
-   
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
-      rgba(0, 73, 144, 0.5) 5px 10px 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    cursor: pointer;
+  .itsme {
+    width: 6.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: transparent;
+    color: white;
     border: none;
-    height: 80%;
-  }
-  
+    font-size: 18px;
+    font-weight: normal;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border-radius:10px ;
+   }
+   .nav-name-span{
+    font-weight: bold;
+   }
+.itsme:hover {
+    color: black;
+   }
+   
 .itsme:after {
     content: "";
-    width: 0%;
-    height: 100%;
-    background: lightblue;
+    background: rgb(123, 179, 198);
     position: absolute;
-    transition: all 0.4s ease-in-out;
-    right: 0;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+ .itsme:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+
+   }
+
+   /* Gituhb btn */
+ 
+   .git-btn {
+    display: grid;
+    place-items: center;
+    background: #e3edf7;
+
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+          -6px -6px 10px -1px rgba(255,255,255,0.7);
+    border: 1px solid rgba(0,0,0,0);
+    cursor: pointer;
+    transition: transform 0.5s;
+    margin-top: 3%;
   }
   
-.itsme:hover::after {
-    right: auto;
-    left: 0;
-    width: 100%;
+  .git-btn:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+          inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+          -0.5px -0.5px 0px rgba(255,255,255,1),
+          0.5px 0.5px 0px rgba(0,0,0,0.15),
+          0px 12px 10px -10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.1);
+    transform: translateY(0.5em);
   }
   
-.itsme span {
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-    padding: 18px 25px;
-    color: #fff;
-    font-weight: 700;
-    letter-spacing: 0.2em;
-    z-index: 20;
-    transition: all 0.3s ease-in-out;
+  .git-btn svg {
+    transition: transform 0.5s;
   }
   
-.itsme:hover span {
-    color: #183153;
-    animation: scaleUp 0.3s ease-in-out;
+  .git-btn:hover svg {
+    transform: scale(0.9);
+    fill: #333333;
   }
   
-  @keyframes scaleUp {
-    0% {
-      transform: scale(1);
-    }
   
-    50% {
-      transform: scale(0.95);
-    }
   
-    100% {
-      transform: scale(1);
-    }
-  }
