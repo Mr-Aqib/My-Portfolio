@@ -1,121 +1,116 @@
-*
-{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
+.buttons-holder {
+  transition: all 0.5s;
+}
+.navbar-holder {
+  background-color: rgba(0, 73, 144);
 
-  .buttons-holder
-  {
-    transition: all 0.5s;
-  }
-  .navbar-holder
-  {
-    background-color: rgba(0, 73, 144);
-   
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
-      rgba(0, 73, 144, 0.5) 5px 10px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+    rgba(0, 73, 144, 0.5) 5px 10px 15px;
+}
 
-  }
-  
-  .nav-btns {
-    
-    outline: 0 !important;
-    border: 0 !important;
-    width: 50px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: transparent;
-    color: #fff;
-    transition: all ease-in-out 0.3s;
-    cursor: pointer;
-  }
-  
-  .nav-btns:hover {
-    transform: translateY(-6px);
-   color: rgb(27, 133, 219);
-  }
-  
-  .icon {
-    font-size: 25px;
-   
-  }
-  /* Nav Button */
-  .itsme {
-    width: 6.5em;
-    height: 2.3em;
-    margin: 0.5em;
-    background: transparent;
-    color: white;
-    border: none;
-    font-size: 18px;
-    font-weight: normal;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    border-radius:10px ;
-   }
-   .nav-name-span{
-    font-weight: bold;
-   }
+.nav-btns {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 50px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.nav-btns:hover {
+  transform: translateY(-6px);
+  color: rgb(27, 133, 219);
+}
+
+.icon {
+  font-size: 25px;
+}
+/* Nav Button */
+.itsme {
+  width: 6.5em;
+  height: 2.3em;
+  margin: 0.5em;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: normal;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.nav-name-span {
+  font-weight: bold;
+}
 .itsme:hover {
-    color: black;
-   }
-   
+  color: black;
+}
+
 .itsme:after {
-    content: "";
-    background: rgb(123, 179, 198);
-    position: absolute;
-    z-index: -1;
-    left: -20%;
-    right: -20%;
-    top: 0;
-    bottom: 0;
-    transform: skewX(-45deg) scale(0, 1);
-    transition: all 0.5s;
-   }
-   
- .itsme:hover:after {
-    transform: skewX(-45deg) scale(1, 1);
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+  content: "";
+  background: rgb(123, 179, 198);
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
 
-   }
+.itsme:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
 
-   /* Gituhb btn */
- 
-   .git-btn {
-    display: grid;
-    place-items: center;
-    background: #e3edf7;
+/* Gituhb btn */
 
-    border-radius: 10px;
-    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-          -6px -6px 10px -1px rgba(255,255,255,0.7);
-    border: 1px solid rgba(0,0,0,0);
-    cursor: pointer;
-    transition: transform 0.5s;
-    margin-top: 3%;
-  }
-  
-  .git-btn:hover {
-    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
-          inset -4px -4px 6px -1px rgba(255,255,255,0.7),
-          -0.5px -0.5px 0px rgba(255,255,255,1),
-          0.5px 0.5px 0px rgba(0,0,0,0.15),
-          0px 12px 10px -10px rgba(0,0,0,0.05);
-    border: 1px solid rgba(0,0,0,0.1);
-    transform: translateY(0.5em);
-  }
-  
-  .git-btn svg {
-    transition: transform 0.5s;
-  }
-  
-  .git-btn:hover svg {
-    transform: scale(0.9);
-    fill: #333333;
-  }
-  
-  
-  
+.git-btn {
+  display: grid;
+  place-items: center;
+  background: #e3edf7;
+
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: transform 0.5s;
+  margin-top: 3%;
+}
+
+.git-btn:hover {
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transform: translateY(0.5em);
+}
+
+.git-btn svg {
+  transition: transform 0.5s;
+}
+
+.git-btn:hover svg {
+  transform: scale(0.9);
+  fill: #333333;
+}
+.nav-links {
+  transition: all 0.3s;
+}
+.nav-links:hover {
+  transform: translateY(-6px);
+  color: aqua !important;
+}
