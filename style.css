@@ -118,16 +118,15 @@
 {
   font-size: 38px;
 transition: all .5s;
-display: none;
-}
-.menu-icon:hover
+
+} 
+ .menu-icon:hover
 {
   transform: translate(-10px,-10px);
+  color: rgb(0, 255, 255) !important;
 }
+
 @media only screen and (max-width:800px) {
 
- .menu-icon
- {
- 
- }
+
 }
