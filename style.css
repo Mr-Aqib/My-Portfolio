@@ -120,13 +120,38 @@
 transition: all .5s;
 
 } 
- .menu-icon:hover
+.sidebar
 {
-  transform: translate(-10px,-10px);
-  color: rgb(0, 255, 255) !important;
+  background-color: rgba(0, 73, 144);
+  opacity: 90%;
+  transform: translateX(-100%) ;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+  rgba(0, 73, 144, 0.5) 5px 10px 15px;
+  border-radius: 0px 70px 70px 0px;
+  transition: all .7s;
+  width: 300px;
+
+}
+.sidebar-animation
+{
+  transform: translateX(0%) ;
+  animation: sidebar-anim .7s ;
+  transition: all .7s;
+}
+@keyframes sidebar-anim
+{
+  from
+  {
+    transform: translateX(-100%) ;
+  }
+  to
+  {
+    transform: translateX(0%) ;
+  }
 }
 
-@media only screen and (max-width:800px) {
-
-
+ .menu-icon:hover
+{
+  transform: translate(-5px,-5px);
+  color: rgb(0, 255, 255) !important;
 }
