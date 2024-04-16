@@ -120,7 +120,6 @@
 }
 .sidebar {
   background-color: rgba(0, 73, 144);
-  opacity: 90%;
   transform: translateX(0%);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
     rgba(0, 73, 144, 0.5) 5px 10px 15px;
@@ -149,15 +148,12 @@
 .btn-flip{
   opacity: 1;
   outline: 0;
-  color: #fff;
   line-height: 40px;
   position: relative;
   text-align: center;
   letter-spacing: 1px;
   display: inline-block;
   text-decoration: none;
-  font-family: 'Open Sans';
-  text-transform: uppercase;
   
   &:hover{
     
@@ -175,14 +171,12 @@
   &:after{
     top: 0;
     left: 0;
-    opacity: 0;
     width: 100%;
-    color: #323237;
+  color: aqua;
     display: block;
-    transition: all .7s;
+    transition: all .3s;
     position: absolute;
-    background: #adadaf;
-    content: attr(data-back);
+    content: 'Full-stack Developer';
     transform: translateY(-50%) rotateX(90deg);
   }
   
@@ -190,14 +184,14 @@
     top: 0;
     left: 0;
     opacity: 1;
-    color: #adadaf;
+    color: white;
     display: block;
     padding: 0 30px;
     line-height: 40px;
-    transition: all .7s;
+    transition: all .3s;
     position: relative;
-    background: #323237;
-    content: attr(data-front);
+   
+    content: "Hey, I'm Aqib";
     transform: translateY(0) rotateX(0);
   }
 }
