@@ -242,6 +242,7 @@
 .close-btn-sidenav:hover {
   transform: scale(1.2);
 }
+
 .name-sec-h1
 {
   font-size: 50px;
@@ -257,6 +258,12 @@
   font-weight: normal;
   color: white;
 }
+.name-sec-h1-span
+{
+  color: aqua;
+  font-weight: bolder;
+  text-shadow: 2px 4px 4px rgba(46,91,173,0.6);
+}
 .name-sec-h5
 {
   font-family: "Comic Neue", cursive;
@@ -264,10 +271,41 @@
 }
 .name-sec
 {
-  background-color: rgba(0, 73, 144);
-}
-.name-sec-left
-{
-  border-radius: 0px 70px 70px 0px;
   background-color: rgb(4, 25, 47);
+}
+.bi-instagram,.bi-telegram,.bi-facebook,.bi-whatsapp,.bi-linkedin
+{
+  color: white;
+transition: all .3s;
+  font-size: 25px;
+}
+.bi-instagram:hover
+{
+   color: rgb(49, 197, 197);
+  transform: translateY(-10px);
+}
+.bi-telegram:hover
+{
+   color: rgb(49, 197, 197);
+  transform: translateY(-10px);
+}
+.bi-facebook:hover
+{
+   color: rgb(49, 197, 197);
+  transform: translateY(-10px);
+}
+.bi-linkedin:hover
+{
+   color: rgb(49, 197, 197);
+  transform: translateY(-10px);
+}
+.bi-whatsapp:hover
+{
+   color: rgb(49, 197, 197);
+  transform: translateY(-10px);
+}
+.name-sec-left-icons
+{
+
+  width: 40vh;
 }
