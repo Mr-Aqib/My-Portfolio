@@ -120,7 +120,7 @@
 }
 .sidebar {
   background-color: rgba(0, 73, 144);
-  transform: translateX(0%);
+  transform: translateX(-100%);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
     rgba(0, 73, 144, 0.5) 5px 10px 15px;
   border-radius: 0px 70px 70px 0px;
@@ -194,4 +194,16 @@
     content: "Hey, I'm Aqib";
     transform: translateY(0) rotateX(0);
   }
+}
+.mdi--arrow-left-bold {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M20 9v6h-8v4.84L4.16 12L12 4.16V9z'/%3E%3C/svg%3E");
+}
+.close-btn-sidenav:hover{
+ 
+  transform : scale(1.2)
 }
