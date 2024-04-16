@@ -114,43 +114,90 @@
   transform: translateY(-6px);
   color: aqua !important;
 }
-.menu-icon
-{
+.menu-icon {
   font-size: 38px;
-transition: all .5s;
-
-} 
-.sidebar
-{
+  transition: all 0.5s;
+}
+.sidebar {
   background-color: rgba(0, 73, 144);
   opacity: 90%;
-  transform: translateX(0%) ;
+  transform: translateX(0%);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
-  rgba(0, 73, 144, 0.5) 5px 10px 15px;
+    rgba(0, 73, 144, 0.5) 5px 10px 15px;
   border-radius: 0px 70px 70px 0px;
-  transition: all .7s;
+  transition: all 0.7s;
   width: 300px;
-
 }
-.sidebar-animation
-{
-  transform: translateX(0%) ;
-  animation: sidebar-anim .7s ;
-  transition: all .7s;
+.sidebar-animation {
+  transform: translateX(0%);
+  animation: sidebar-anim 0.7s;
+  transition: all 0.7s;
 }
-@keyframes sidebar-anim
-{
-  from
-  {
-    transform: translateX(-100%) ;
+@keyframes sidebar-anim {
+  from {
+    transform: translateX(-100%);
   }
-  to
-  {
-    transform: translateX(0%) ;
+  to {
+    transform: translateX(0%);
   }
 }
- .menu-icon:hover
-{
-  transform: translate(-5px,-5px);
+.menu-icon:hover {
+  transform: translate(-5px, -5px);
   color: rgb(0, 255, 255) !important;
+}
+/* Flip sidebar-btn */
+.btn-flip{
+  opacity: 1;
+  outline: 0;
+  color: #fff;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+  
+  &:hover{
+    
+    &:after{
+      opacity: 1;
+      transform: translateY(0) rotateX(0);
+    }
+    
+    &:before{
+      opacity: 0;
+      transform: translateY(50%) rotateX(90deg);
+    }
+  }
+  
+  &:after{
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: #323237;
+    display: block;
+    transition: all .7s;
+    position: absolute;
+    background: #adadaf;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+  }
+  
+  &:before{
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: #adadaf;
+    display: block;
+    padding: 0 30px;
+    line-height: 40px;
+    transition: all .7s;
+    position: relative;
+    background: #323237;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+  }
 }
