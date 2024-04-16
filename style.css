@@ -2,7 +2,44 @@
   padding: 0;
   margin: 0;
 }
+/* Fonts */
+.comic-neue-light {
+  font-family: "Comic Neue", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
 
+.comic-neue-regular {
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.comic-neue-bold {
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.comic-neue-light-italic {
+  font-family: "Comic Neue", cursive;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.comic-neue-regular-italic {
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.comic-neue-bold-italic {
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Web */
 .buttons-holder {
   transition: all 0.5s;
 }
@@ -119,9 +156,9 @@
   transition: all 0.5s;
 }
 .sidebar {
-  background-color: rgba(0, 73, 144);
+  background-color: rgb(40, 104, 169);
   transform: translateX(-100%);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+  box-shadow: rgba(12, 5, 5, 0.35) 0px 5px 15px,
     rgba(0, 73, 144, 0.5) 5px 10px 15px;
   border-radius: 0px 70px 70px 0px;
   transition: all 0.7s;
@@ -145,7 +182,7 @@
   color: rgb(0, 255, 255) !important;
 }
 /* Flip sidebar-btn */
-.btn-flip{
+.btn-flip {
   opacity: 1;
   outline: 0;
   line-height: 40px;
@@ -154,33 +191,32 @@
   letter-spacing: 1px;
   display: inline-block;
   text-decoration: none;
-  
-  &:hover{
-    
-    &:after{
+
+  &:hover {
+    &:after {
       opacity: 1;
       transform: translateY(0) rotateX(0);
     }
-    
-    &:before{
+
+    &:before {
       opacity: 0;
       transform: translateY(50%) rotateX(90deg);
     }
   }
-  
-  &:after{
+
+  &:after {
     top: 0;
     left: 0;
     width: 100%;
-  color: aqua;
+    color: aqua;
     display: block;
-    transition: all .3s;
+    transition: all 0.3s;
     position: absolute;
-    content: 'Full-stack Developer';
+    content: "Full-stack Developer";
     transform: translateY(-50%) rotateX(90deg);
   }
-  
-  &:before{
+
+  &:before {
     top: 0;
     left: 0;
     opacity: 1;
@@ -188,9 +224,9 @@
     display: block;
     padding: 0 30px;
     line-height: 40px;
-    transition: all .3s;
+    transition: all 0.3s;
     position: relative;
-   
+
     content: "Hey, I'm Aqib";
     transform: translateY(0) rotateX(0);
   }
@@ -203,7 +239,35 @@
   background-size: 100% 100%;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M20 9v6h-8v4.84L4.16 12L12 4.16V9z'/%3E%3C/svg%3E");
 }
-.close-btn-sidenav:hover{
- 
-  transform : scale(1.2)
+.close-btn-sidenav:hover {
+  transform: scale(1.2);
+}
+.name-sec-h1
+{
+  font-size: 50px;
+  font-family: "Comic Neue", cursive;
+  font-weight: bolder;
+  font-weight: 900;
+  color: white;
+}
+.name-sec-h12
+{
+  font-size: 40px;
+  font-family: "Comic Neue", cursive;
+  font-weight: normal;
+  color: white;
+}
+.name-sec-h5
+{
+  font-family: "Comic Neue", cursive;
+  color: white;
+}
+.name-sec
+{
+  background-color: rgba(0, 73, 144);
+}
+.name-sec-left
+{
+  border-radius: 0px 70px 70px 0px;
+  background-color: rgb(4, 25, 47);
 }
