@@ -245,7 +245,7 @@
 
 .name-sec-h1
 {
-  font-size: 50px;
+  font-size: 70px;
   font-family: "Comic Neue", cursive;
   font-weight: bolder;
   font-weight: 900;
@@ -253,7 +253,7 @@
 }
 .name-sec-h12
 {
-  font-size: 40px;
+  font-size: 50px;
   font-family: "Comic Neue", cursive;
   font-weight: normal;
   color: white;
@@ -268,10 +268,12 @@
 {
   font-family: "Comic Neue", cursive;
   color: white;
+  font-size: 25px;
 }
 .name-sec
 {
   background-color: rgb(4, 25, 47);
+  
 }
 .bi-instagram,.bi-telegram,.bi-facebook,.bi-whatsapp,.bi-linkedin
 {
@@ -313,7 +315,29 @@ transition: all .3s;
 {
   transition: all 1s;
 }
-.name-sec-right:hover
+.name-sec-left-holder
 {
-opacity: 30%;
+  transition: all 1s;
+}
+.name-sec-left-holder:hover
+{
+  opacity: 50%;
+}
+@media only screen and (max-width:700px) {
+  .name-sec-h1
+  {
+    font-size: 40px;
+  }
+  .name-sec-h12
+  {
+    font-size: 30px;
+  }
+  .name-sec-h5
+  {
+    font-size: 15px;
+  }
+  .nav-row-1
+  {
+    gap: 20px;
+  }
 }
