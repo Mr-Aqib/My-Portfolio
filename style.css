@@ -335,9 +335,12 @@
   .nav-row-1 {
     gap: 20px;
   }
+  .name-sec {
+    height: 69vh !important;
+  }
 #particles-js
 {
-  height: 80vh;
+  height: 52vh !important;
 }
 
 
@@ -352,6 +355,10 @@
   
   #particles-js
 {
-  height: 50vh;
+  height: 55vh;
 }
+}
+#particles-js
+{
+  height: 83vh;
 }
