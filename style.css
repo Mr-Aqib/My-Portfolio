@@ -346,3 +346,14 @@ transition: all .3s;
     gap: 20px;
   }
 }
+@media only screen and (max-width:450px)
+{
+ .name-sec-left
+  {
+   height: 50vh;
+  }
+ .name-sec
+ {
+  height: 55vh !important;
+ }
+}
