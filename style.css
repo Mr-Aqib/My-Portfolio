@@ -338,12 +338,9 @@
   .name-sec {
     height: 69vh !important;
   }
-#particles-js
-{
-  height: 52vh !important;
-}
-
-
+  #particles-js {
+    height: 52vh !important;
+  }
 }
 @media only screen and (max-width: 450px) {
   .name-sec-left {
@@ -352,13 +349,11 @@
   .name-sec {
     height: 55vh !important;
   }
-  
-  #particles-js
-{
-  height: 55vh;
+
+  #particles-js {
+    height: 55vh;
+  }
 }
-}
-#particles-js
-{
+#particles-js {
   height: 83vh;
 }
