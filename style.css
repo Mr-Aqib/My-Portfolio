@@ -335,7 +335,11 @@
   .nav-row-1 {
     gap: 20px;
   }
-  
+#particles-js
+{
+  height: 80vh;
+}
+
 
 }
 @media only screen and (max-width: 450px) {
@@ -345,6 +349,9 @@
   .name-sec {
     height: 55vh !important;
   }
- 
+  
+  #particles-js
+{
+  height: 50vh;
 }
-
+}
