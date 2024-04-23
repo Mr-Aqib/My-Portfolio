@@ -357,3 +357,12 @@
 #particles-js {
   height: 83vh;
 }
+.service-section
+{
+  background-image: linear-gradient(to bottom, #010910, #061826, #01233c, #002e54, #00396d);
+}
+.service-section-h1
+{
+  font-family: "Comic Neue", cursive;
+  font-size: 50px;
+}
