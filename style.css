@@ -357,12 +357,17 @@
 #particles-js {
   height: 83vh;
 }
-.service-section
-{
-  background-image: linear-gradient(to bottom, #010910, #061826, #01233c, #002e54, #00396d);
+.service-section {
+  background-image: linear-gradient(
+    to bottom,
+    #010910,
+    #061826,
+    #01233c,
+    #002e54,
+    #00396d
+  );
 }
-.service-section-h1
-{
+.service-section-h1 {
   font-family: "Comic Neue", cursive;
   font-size: 50px;
 }
@@ -396,7 +401,7 @@
 .cover {
   top: 0;
   position: absolute;
- 
+
   background-color: rgb(18, 85, 121);
   width: 100%;
   height: 100%;
@@ -431,40 +436,38 @@
 p {
   font-size: 26px;
 
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: white;
 }
-.book-h1
-{
+.book-h1 {
   top: 40;
- 
+
   font-family: "Comic Neue", cursive;
   font-weight: bold;
-  background-image: 
-    linear-gradient(to right, rgb(131, 124, 124),rgb(18, 251, 255),rgb(51, 166, 237)
-    ); 
+  background-image: linear-gradient(
+    to right,
+    rgb(131, 124, 124),
+    rgb(18, 251, 255),
+    rgb(51, 166, 237)
+  );
   -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;  
+  -webkit-text-fill-color: transparent;
   animation: rainbow-animation 205s linear infinite;
-  
 }
 @keyframes rainbow-animation {
   to {
-      background-position: 4500vh;
+    background-position: 4500vh;
   }
 }
-.book-ul
-{
+.book-ul {
   top: 75;
   list-style: none;
   right: 50;
   color: white;
   font-family: "Comic Neue", cursive;
-font-size: 20px;
+  font-size: 20px;
 }
-.book-ul ::marker
-{
-  content: '⚛';
- color: wheat;
-
+.book-ul ::marker {
+  content: "⚛";
+  color: wheat;
 }
