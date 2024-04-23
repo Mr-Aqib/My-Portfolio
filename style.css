@@ -429,8 +429,42 @@
 }
 
 p {
-  font-size: 30px;
-  font-weight: bolder;
-  font-family: "Comic Neue", cursive;
+  font-size: 26px;
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
   color: white;
+}
+.book-h1
+{
+  top: 40;
+ 
+  font-family: "Comic Neue", cursive;
+  font-weight: bold;
+  background-image: 
+    linear-gradient(to right, rgb(131, 124, 124),rgb(18, 251, 255),rgb(51, 166, 237)
+    ); 
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+  animation: rainbow-animation 205s linear infinite;
+  
+}
+@keyframes rainbow-animation {
+  to {
+      background-position: 4500vh;
+  }
+}
+.book-ul
+{
+  top: 75;
+  list-style: none;
+  right: 50;
+  color: white;
+  font-family: "Comic Neue", cursive;
+font-size: 20px;
+}
+.book-ul ::marker
+{
+  content: '⚛';
+ color: wheat;
+
 }
