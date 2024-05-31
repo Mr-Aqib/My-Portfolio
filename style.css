@@ -310,6 +310,7 @@ span {
   width: 30vw;
   border-radius: 50px;
   padding-top: 2rem;
+  box-shadow: 5px 5px 5px gray;
 }
 
 .heading {
@@ -643,7 +644,32 @@ span {
   font-size: 2.4rem;
   color: #333;
 }
-
+.pnyedu {
+  font-size: 20px;
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+}
+.pnydiv {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-img .date {
+  font-weight: bold;
+}
+.about-ul {
+  text-align: justify;
+}
 /*BREAKPOINTS*/
 
 @media (max-width: 1200px) {
