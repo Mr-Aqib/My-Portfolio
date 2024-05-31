@@ -663,6 +663,7 @@ span {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  font-weight: bold;
 }
 .about-img .date {
   font-weight: bold;
