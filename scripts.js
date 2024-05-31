@@ -9,7 +9,7 @@ menuIcon.onclick = () => {
 
 
 /*=====scroll section active link======*/
-let sections =  document.querySelectorAll('section');
+let sections = document.querySelectorAll('section');
 let navlinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
@@ -19,7 +19,7 @@ window.onscroll = () => {
     let height = sec.offsetHeight;
     let id = sec.getAttribute('id');
 
-    if(top >= offset && top < offset + height) {
+    if (top >= offset && top < offset + height) {
       navlinks.forEach(links => {
         links.classList.remove('active');
         document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
@@ -29,16 +29,16 @@ window.onscroll = () => {
   });
 
 
-/*=====sticky navbar======*/
-let header = document.querySelector('.header');
+  /*=====sticky navbar======*/
+  let header = document.querySelector('.header');
 
-header.classList.toggle('sticky', window.scrollY > 100);
+  header.classList.toggle('sticky', window.scrollY > 100);
 
 
-/*=====remove menu icon navbar when click scroll======*/
+  /*=====remove menu icon navbar when click scroll======*/
 
-menuIcon.classList.remove('bx-x');
-navbar.classList.remove('active');
+  menuIcon.classList.remove('bx-x');
+  navbar.classList.remove('active');
 
 
 
@@ -47,19 +47,19 @@ navbar.classList.remove('active');
 /*=====swiper======*/
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 50,
-    loop: true,
-    grabCursor: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+  slidesPerView: 1,
+  spaceBetween: 50,
+  loop: true,
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 /*=====drak light mode======*/
 let darkModeIcon = document.querySelector('#darkMode-icon');

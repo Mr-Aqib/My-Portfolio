@@ -910,7 +910,13 @@ span {
     display: none;
   }
 }
-
+.email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
 @media (max-width: 617px) {
   .portfolio .portfolio-container {
     grid-template-columns: 1fr;
